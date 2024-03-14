@@ -1,4 +1,4 @@
-package com.joni23s.trabajoFinalApiBazar;
+package com.joni23s.finalWorkApiMarket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

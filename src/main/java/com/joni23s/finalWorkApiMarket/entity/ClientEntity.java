@@ -1,4 +1,4 @@
-package com.joni23s.trabajoFinalApiBazar.entity;
+package com.joni23s.finalWorkApiMarket.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

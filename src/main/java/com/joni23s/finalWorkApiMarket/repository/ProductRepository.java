@@ -1,6 +1,6 @@
-package com.joni23s.trabajoFinalApiBazar.repository;
+package com.joni23s.finalWorkApiMarket.repository;
 
-import com.joni23s.trabajoFinalApiBazar.entity.ProductEntity;
+import com.joni23s.finalWorkApiMarket.entity.ProductEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,4 +10,7 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository <ProductEntity, Long> {
 
     public List<ProductEntity> findAll();
+
+
+
 }

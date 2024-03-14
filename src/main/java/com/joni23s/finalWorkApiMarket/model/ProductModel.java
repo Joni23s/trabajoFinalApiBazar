@@ -1,7 +1,4 @@
-package com.joni23s.trabajoFinalApiBazar.model;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
+package com.joni23s.finalWorkApiMarket.model;
 
 public class ProductModel {
 

@@ -1,6 +1,6 @@
-package com.joni23s.trabajoFinalApiBazar.controller;
+package com.joni23s.finalWorkApiMarket.controller;
 
-import com.joni23s.trabajoFinalApiBazar.service.SaleService;
+import com.joni23s.finalWorkApiMarket.service.SaleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 

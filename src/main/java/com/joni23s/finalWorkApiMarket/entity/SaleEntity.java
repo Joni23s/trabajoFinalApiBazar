@@ -1,4 +1,4 @@
-package com.joni23s.trabajoFinalApiBazar.entity;
+package com.joni23s.finalWorkApiMarket.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -22,8 +22,8 @@ public class SaleEntity {
 
     private Double total;
 
-    @ManyToOne
-    @JoinColumn(name = "id_products")
+    @OneToMany
+//    @JoinColumn(name = "Products_product_code")
     private List<ProductEntity> listProducts;
 
     @OneToOne

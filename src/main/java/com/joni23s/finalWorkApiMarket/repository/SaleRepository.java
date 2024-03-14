@@ -1,6 +1,6 @@
-package com.joni23s.trabajoFinalApiBazar.repository;
+package com.joni23s.finalWorkApiMarket.repository;
 
-import com.joni23s.trabajoFinalApiBazar.entity.SaleEntity;
+import com.joni23s.finalWorkApiMarket.entity.SaleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
