@@ -1,7 +1,7 @@
-package com.joni23s.finalWorkApiMarket.service;
+package com.joni23s.finalWorkApiMarket.services;
 
-import com.joni23s.finalWorkApiMarket.entity.ProductEntity;
-import com.joni23s.finalWorkApiMarket.repository.ProductRepository;
+import com.joni23s.finalWorkApiMarket.entities.ProductEntity;
+import com.joni23s.finalWorkApiMarket.repositories.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

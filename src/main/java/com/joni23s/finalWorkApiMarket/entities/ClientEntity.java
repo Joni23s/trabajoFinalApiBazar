@@ -1,9 +1,6 @@
-package com.joni23s.finalWorkApiMarket.entity;
+package com.joni23s.finalWorkApiMarket.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,6 +10,7 @@ import lombok.Setter;
 public class ClientEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_client")
     private Long idClient;
 
@@ -23,6 +21,10 @@ public class ClientEntity {
     private int dni;
 
     public ClientEntity() { }
+
+    public ClientEntity(Long idClient) {
+        this.idClient = idClient;
+    }
 
     public ClientEntity(Long idClient, String name, String lastName, int dni) {
         this.idClient = idClient;

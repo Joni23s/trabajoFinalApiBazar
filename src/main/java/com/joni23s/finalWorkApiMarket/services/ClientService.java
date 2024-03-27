@@ -1,12 +1,10 @@
-package com.joni23s.finalWorkApiMarket.service;
+package com.joni23s.finalWorkApiMarket.services;
 
-import com.joni23s.finalWorkApiMarket.entity.ClientEntity;
-import com.joni23s.finalWorkApiMarket.entity.ProductEntity;
-import com.joni23s.finalWorkApiMarket.repository.ClientRepository;
+import com.joni23s.finalWorkApiMarket.entities.ClientEntity;
+import com.joni23s.finalWorkApiMarket.repositories.ClientRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -41,11 +39,11 @@ public class ClientService {
 
             clientRepository.deleteById(id);
 
-            return "Cliente: " + clientOld.getName() + clientOld.getLastName() + ". Eliminado";
+            return "Cliente: " + clientOld.getName() + " " + clientOld.getLastName() + ". Eliminado";
 
         } catch (EntityNotFoundException e) {
 
-            throw new RuntimeException("Error al buscar el cliente", e);
+            throw new RuntimeException("Error al buscar el cliente ", e);
         }
     }
 

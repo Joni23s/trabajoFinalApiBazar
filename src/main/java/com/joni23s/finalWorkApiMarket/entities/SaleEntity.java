@@ -1,4 +1,4 @@
-package com.joni23s.finalWorkApiMarket.entity;
+package com.joni23s.finalWorkApiMarket.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -23,10 +23,19 @@ public class SaleEntity {
     private Double total;
 
     @OneToMany
-//    @JoinColumn(name = "Products_product_code")
     private List<ProductEntity> listProducts;
 
     @OneToOne
-    private ClientEntity aCustomer;
+    @JoinColumn(name = "id_client")
+    private ClientEntity client;
+
+    public SaleEntity() { }
+
+    public SaleEntity(LocalDate saleDate, Double total, List<ProductEntity> listProducts, ClientEntity client) {
+        this.saleDate = saleDate;
+        this.total = total;
+        this.listProducts = listProducts;
+        this.client = client;
+    }
 
 }

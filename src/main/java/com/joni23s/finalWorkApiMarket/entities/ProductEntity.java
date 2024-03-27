@@ -1,4 +1,4 @@
-package com.joni23s.finalWorkApiMarket.entity;
+package com.joni23s.finalWorkApiMarket.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -23,8 +23,12 @@ public class ProductEntity {
     private Double stock;
 
 
+
     public ProductEntity() { }
 
+    public ProductEntity(Long productCode) {
+        this.productCode = productCode;
+    }
     public ProductEntity(Long productCode, String name, String brand, Double cost, Double stock) {
         this.productCode = productCode;
         this.name = name;
@@ -32,4 +36,9 @@ public class ProductEntity {
         this.cost = cost;
         this.stock = stock;
     }
+
+
+
+
+
 }
